@@ -16,11 +16,11 @@ minimal_mistakes_skin    : 'dark' # "default"  "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en"
-title                    : "Personal Blog"
-title_separator          : "-"
+title                    : "Software Engineer Blog" 
+title_separator          : "|" # Customising the seperation character in SEO friendly page titles
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Laghero"
-description              : "A personal blog site"
+name                     : "Laghero" # Site author name
+description              : "A simple Jekyll theme blog" # Predominantly in meta descriptions for improving SEO
 url                      : 'https://Lagher0.github.io' # the base hostname & protocol for your site e.g. "https://Lagher0.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 'Lagher0/Lagher0.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -227,6 +227,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -247,23 +248,23 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
+
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -284,6 +285,28 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
+      show_date: true
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+defaults:
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
+
