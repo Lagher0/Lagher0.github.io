@@ -289,16 +289,12 @@ defaults:
       share: true
       related: true
       show_date: true
-
-defaults:
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-
-defaults:
   - scope:
       path: ""
       type: tag
@@ -309,4 +305,4 @@ defaults:
       type: category
     values:
       comments: false
-
+  
