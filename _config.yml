@@ -19,8 +19,8 @@ locale                   : "en"
 title                    : "Software Engineer Blog" 
 title_separator          : "|" # Customising the seperation character in SEO friendly page titles
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Laghero" # Site author name
-description              : "A simple Jekyll theme blog" # Predominantly in meta descriptions for improving SEO
+name                     : "Laura Silaja" # Site author name
+description              : "A simple Jekyll theme software engineer blog" # Predominantly in meta descriptions for improving SEO
 url                      : 'https://Lagher0.github.io' # the base hostname & protocol for your site e.g. "https://Lagher0.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 'Lagher0/Lagher0.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,9 +101,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Laghero"
+  name             : "Laura Silaja"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : 'Software Engineer'
+  bio              : ""
   location         : "Europe"
   email            :
   links:
@@ -137,10 +137,10 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Lagher0/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      # url: 
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
