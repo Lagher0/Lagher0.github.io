@@ -21,7 +21,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Laura Silaja" # Site author name
 description              : "A simple Jekyll theme software engineer blog" # Predominantly in meta descriptions for improving SEO
 url                      : 'https://Lagher0.github.io' # the base hostname & protocol for your site e.g. "https://Lagher0.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : 'Lagher0/Lagher0.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : /assets/images/Techy3.JPG # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -244,8 +244,8 @@ jekyll-archives:
     category: archive-taxonomy
     tag: archive-taxonomy
   permalinks:
-    category: '/categories/:name/'
-    tag: '/tags/:name/'
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
