@@ -19,7 +19,7 @@ title                    : "Dissertation Blog"
 title_separator          : "|" # Customising the seperation character in SEO friendly page titles
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Laura Silaja" # Site author name
-description              : "A simple Jekyll theme software engineer blog" # Predominantly in meta descriptions for improving SEO
+description              : "A simple Jekyll theme thesis blog" # Predominantly in meta descriptions for improving SEO
 url                      : 'https://Lagher0.github.io' # the base hostname & protocol for your site e.g. "https://Lagher0.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 'Lagher0/Lagher0.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

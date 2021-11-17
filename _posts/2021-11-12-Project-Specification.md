@@ -10,9 +10,6 @@ tags:
 year:
   - 2021
 ---
-
-Let's have a thread with a link to the Latex document on Overleaf. We also want an outline of the project specifics on the blog: what data, what objectives, what methods... initially based on an extended version of one of the project proposals.
-
 # Work in Progress
 
   Mostly contains some notes and general questions about certain areas in the project speficiation
